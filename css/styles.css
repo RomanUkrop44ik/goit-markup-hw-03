@@ -1,0 +1,377 @@
+/* Основний колір текста #2E2F42; */
+
+/* Додатковий колір текста #434455; */
+
+/* Акцент #E7E9FC; */
+
+/* Білий #FFFFFF; */
+
+
+/* Додатковий колір фона #F4F4FD; */
+
+/* Колір героя і футера #2E2F42; */
+
+
+/**
+  |============================
+  | ROOT
+  |============================
+*/
+
+:root {
+    --color-iris: #4d5ae5;
+    --color-ocean: #404bbf;
+    --color-navy-blue: #2e2f42;
+    --color-green: #31d0aa;
+    --color-slate: #434455;
+    --color-light-slate: #8e8f99;
+    --color-cornflower: #e7e9fc;
+    --color-cloud: #f4f4fd;
+    --color-navy-blue-modal: #2e2f42;
+    --color-grey: #2e2f42;
+    --color-white: #ffffff;
+    --color-dairy: #fcfcfc;
+}
+
+/**
+  |============================
+  | BASA STYLES
+  |============================
+*/
+
+body {
+    color: var(--color-slate);
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
+}
+
+.logo {
+    color: #4d5ae5;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+
+.header {
+    background-color: var(--color-white);
+}
+
+.header-nav {}
+
+.dark-logo {
+    color: var(--color-navy-blue);
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+
+
+}
+
+
+
+.header-nav-list {}
+
+
+.header-link {
+    font-family: inherit;
+    color: var(--color-navy-blue);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.header-link:focus,
+.header-link:hover {
+    font-family: inherit;
+    font-style: normal;
+    color: var(--color-ocean);
+    ;
+}
+
+.header-address {
+    font-style: normal;
+}
+
+.header-address-list {}
+
+.header-address-link {
+    font-family: inherit;
+    color: var(--color-slate);
+}
+
+.header-address-link:focus,
+.header-address-link:hover {
+    font-family: inherit;
+    color: var(--color-ocean);
+
+
+}
+
+
+/**
+  |============================
+  | HERO
+  |============================
+*/
+.hero {
+    background-color: var(--color-grey);
+    ;
+}
+
+.hero-heading {
+    color: var(--color-white);
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+
+.hero-button {
+    color: var(--color-white);
+    background-color: var(--color-iris);
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.50;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+.hero-button:focus,
+.hero-button:hover {
+    background-color: var(--color-ocean);
+    font-style: normal;
+}
+
+
+
+
+
+/**
+  |============================
+  | PRIORITET
+  |============================
+*/
+
+.prioritet {}
+
+.prioritet-list {}
+
+.prioritet-item {}
+
+.prioritet-headline {
+    color: var(--color-navy-blue);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.20;
+    letter-spacing: 0.02em;
+}
+
+.prioritet-text {}
+
+
+
+
+
+/**
+  |============================
+  | WORK
+  |============================
+*/
+
+.work {}
+
+.work-heading {
+    font-size: 36px;
+    color: var(--color-navy-blue);
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1.11;
+}
+
+.work-list {}
+
+.work-item {}
+
+.work-image {}
+
+/**
+  |============================
+  | TEAM PROJECT
+  |============================
+*/
+.team {
+    background-color: var(--color-cloud);
+
+}
+
+.team-heading {
+    font-size: 36px;
+    color: var(--color-navy-blue);
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    line-height: 1.11;
+}
+
+.team-list {
+    list-style: none;
+}
+
+.team-item {
+    background-color: var(--color-white);
+
+}
+
+.team-picture {}
+
+.team-name {
+    color: var(--color-navy-blue);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.20;
+    letter-spacing: 0.02em;
+}
+
+.team-work {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | FOOTER
+  |============================
+*/
+
+.footer {
+    background-color: var(--color-navy-blue);
+}
+
+
+.footer-text {
+    color: var(--color-cloud);
+}
+
+
+/**
+   |============================
+   | PAGE - PORTFOLIO - HW-2
+   |============================
+ */
+
+
+.dark-logo {
+    color: #2e2f42;
+}
+
+/**
+   |============================
+   | SECTION - PORTFOLIO
+   |============================
+ */
+
+.section-portfolio {}
+
+.button-list {
+    list-style: none;
+}
+
+.button-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-iris);
+    background-color: var(--color-cloud);
+    cursor: pointer;
+}
+
+.button-item:focus,
+.button-item:hover {
+    color: #ffffff;
+    background-color: #404BBF;
+}
+
+
+
+.portfolio-list {
+    list-style: none;
+}
+
+.portfolio-item {}
+
+.link-picture {
+    text-decoration: none;
+
+}
+
+.portfolio-picture {}
+
+.portfolio-heading {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-navy-blue);
+}
+
+.portfolio-desc {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-slate);
+
+}
+
+/**
+  |============================
+  | FOOTER PORTFOLIO
+  |============================
+*/
+
+.footer-portfolio {
+    background-color: var(--color-navy-blue-modal);
+}
+
+
+.white-logo {
+    color: #f4f4fd;
+}
+
+.footer-text {}
