@@ -60,12 +60,12 @@ body {
 }
 
 .btn {
-    display: flex;
+    display: block;
     align-items: center;
     letter-spacing: 0.04em;
     margin-left: auto;
     margin-right: auto;
-    min-width: 170px;
+    min-width: 169px;
     min-height: 56px;
     border-style: none;
     padding: 16px 32px;
@@ -163,6 +163,14 @@ img {
 
 }
 
+
+.header-nav {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .header-logo {
     color: #4d5ae5;
     font-family: 'Raleway', sans-serif;
@@ -176,20 +184,19 @@ img {
 
 }
 
-.header-nav {
-    margin-right: auto;
-}
-
-
 .header-nav-list {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
+.header-nav-item {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 
 .header-link {
-    display: block;
     padding-top: 24px;
     padding-bottom: 24px;
     font-family: inherit;
@@ -215,6 +222,7 @@ img {
 
 .header-address-list {
     display: flex;
+    gap: 40px;
 }
 
 .header-address-link {
@@ -222,7 +230,7 @@ img {
     padding-bottom: 24px;
     font-family: inherit;
     color: var(--color-slate);
-    margin-right: 40px;
+
 }
 
 .header-address-link:focus,
@@ -282,8 +290,9 @@ img {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    display: flex;
+    display: block;
     line-height: 1.50;
+    min-width: 169px;
 }
 
 .hero-button:focus,
@@ -305,6 +314,7 @@ img {
 
 .prioritet {
     padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .prioritet-container {}
@@ -411,6 +421,7 @@ img {
 
 .team-wrapper {
     padding: 32px 16px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
@@ -439,12 +450,11 @@ img {
 
 .footer {
     background-color: var(--color-navy-blue);
-}
-
-.footer-container {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.footer-container {}
 
 .footer-logo {
     color: #4d5ae5;
@@ -455,12 +465,13 @@ img {
     line-height: 1.17;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    display: inline-block;
+    margin-bottom: 16px;
 
 }
 
 
 .footer-text {
-    margin-top: 16px;
     color: var(--color-cloud);
     width: 264px;
 
@@ -481,25 +492,24 @@ img {
  */
 
 .section-portfolio {
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 
-.btn-filter-container {
+/* .btn-filter-container {
     display: flex;
-    align-items: center;
-    padding-top: 96px;
-}
+    justify-content: center;
+} */
 
-.button-list {
+.portfolio-button-list {
     list-style: none;
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
     gap: 24px;
     padding-bottom: 72px;
 }
 
-.button-item {
+.portfolio-button-item {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -509,14 +519,15 @@ img {
     background-color: var(--color-cloud);
     cursor: pointer;
     padding: 12px 24px;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--color-cornflower);
     border-radius: 4px;
 }
 
-.button-item:focus,
-.button-item:hover {
+.portfolio-button-item:focus,
+.portfolio-button-item:hover {
     color: #ffffff;
     background-color: #404BBF;
+    border: 1px solid transparent;
 }
 
 
@@ -526,15 +537,14 @@ img {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
-    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 48px;
 
 }
 
 .portfolio-item {
     height: auto;
-    width: calc((100% - 72px) /3);
-    border: 1px solid #E7E9FC;
+    width: calc((100% - 48px) /3);
 
 }
 
@@ -546,17 +556,18 @@ img {
 .portfolio-picture {}
 
 .portfolio-wraper {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
 }
 
-.portfolio-heading {
+.portfolio-name-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
-    padding-left: 16px;
     padding-bottom: 8px;
 }
 
@@ -565,6 +576,5 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-slate);
-    padding-left: 16px;
 
 }
