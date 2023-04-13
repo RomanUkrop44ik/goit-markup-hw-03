@@ -259,12 +259,14 @@ img {
   |============================
 */
 .hero {
+
     background-color: var(--color-grey);
+}
+
+.hero-container {
     padding-top: 188px;
     padding-bottom: 188px;
 }
-
-.hero-container {}
 
 .hero-heading {
     color: var(--color-white);
